@@ -24,6 +24,7 @@ jobs:
         7z.exe x main.zip -o"D:\a\a-game-engine"
         ren D:\a\a-game-engine\nugget-main D:\a\a-game-engine\nugget
         dir "$GITHUB_WORKSPACE"
+        dir D:\a\
         echo "$GITHUB_WORKSPACE/mipsel/bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
         echo "$GITHUB_WORKSPACE/mkpsxiso" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
         echo $GITHUB_PATH
